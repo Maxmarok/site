@@ -1,0 +1,377 @@
+﻿<!doctype html>
+<html>
+<title>Test Page</title>
+<link rel="shortcut icon" href="favicon.png" type="image/png">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<meta name=viewport content="width=device-width, initial-scale=0.7">
+<script src="js/jquery.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$(window).on('load', function () {
+		$('#page-preloader').find('.gray-mask').fadeOut(1500);
+		$('#page-preloader').delay(1500).fadeOut('slow');
+	});
+</script>
+
+<audio src="audio/laugh.ogg" autoplay></audio>
+<!--audio src="audio/music.ogg" loop controls></audio-->
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/closeup.js" type="text/javascript"></script>
+
+<style>
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+}
+#page-preloader .mask{
+	background: url('mask.png') /*no-repeat 50% 50%*/;
+	z-index:99;
+}
+#page-preloader .gray-mask{
+	background: url('gray_mask.png') /*no-repeat 50% 50%*/;
+	z-index:999;
+}
+#page-preloader .mask,  #page-preloader .gray-mask{
+	width: 150px;
+	height: 170px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+	background-size:cover;
+    margin: -75px 0 0 -85px;
+}
+</style>
+
+<body>
+<div id="page-preloader"><span class="gray-mask"></span><span class="mask"></span></div>
+<div class="content">
+<h1>Epic Title</h1>
+
+<!--main page-->
+<div class="stack-block">
+<h4>Choose block:</h4>
+<div id="block1">First block</div>
+<div id="block2">Second block</div>
+<div id="block3">Third block</div>
+</div>
+<!--main page-->
+
+<!--first block-->
+<div class="content-block" id="first-block">
+
+<div class="block-name">
+<h2 id="open-close">Close title</h2>
+<div class="inside">
+<div class="table-block">
+<p class="block-desc speech">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="block-name">
+<h2 id="open-close">Close title</h2>
+<div class="inside">
+<div class="table-block">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+<p class="speech">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p class="speech">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+
+<p class="speech">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+<p class="speech">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+
+<p class="speech">Lorem ipsum dolor sit amet.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p class="speech">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+<p>Lorem ipsum dolor sit amet.</p>
+
+<p>Consectetuer adipiscing elit.</p>
+
+<p>Ut wisi enim ad minim veniam.</p>
+</div>
+
+</div>
+</div>
+
+<div class="block-name">
+<h2 id="open-close">Close title</h2>
+<div class="inside">
+
+<p>Ut wisi enim ad minim veniam.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
+
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
+
+<p>***</p>
+
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
+
+<p>***</p>
+</div>
+</div>
+</div>
+<!--first block end-->
+
+<!--second block-->
+<div class="content-block" id="second-block">
+<div class="block-name">
+<h2 id="open-close">Close title</h2>
+
+<div class="inside">
+<div class="table-block">
+<p class="block-desc speech">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+</div>
+
+</div>
+</div>
+
+<div class="block-name">
+<h2 id="open-close">Close title</h2>
+
+<div class="inside">
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="block-name">
+
+<h2 id="open-close">Close title</h2>
+
+<div class="inside">
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="block-name">
+
+<h2 id="open-close">Close title</h2>
+
+<div class="inside">
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+<div class="table-block">
+<h4>Lorem ipsum dolor</h4>
+<p class="block-desc">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+<p class="objective">Ut wisi enim ad minim veniam.</p>
+<p class="abilities">quis nostrud exerci tation ullamcorper.</p>
+</div>
+
+</div>
+</div>
+</div>
+<!--second block end-->
+
+<!--third block-->
+<div class="content-block" id="third-block">
+<div class="block-name">
+<h2 id="open-close">Close title</h2>
+<div class="inside">
+<p class="speech">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+</div>
+</div>
+
+<div class="block-name">
+<h2 id="open-close">Close title</h2>
+<div class="inside">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+
+<p class="speech">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+
+<p class="speech">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+
+<p class="speech">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+
+<p class="speech">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+
+<p class="speech">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+
+<p class="speech">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+
+<p class="speech">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+
+<p class="speech">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+
+<p class="speech">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+
+</div>
+</div>
+</div>
+<!--third block end-->
+
+<div class="back">Return back</div>
+
+<!--side buttons-->
+<p id="back-top">
+    <a href="top"><img src="img/up.png"><span>&nbsp;&nbsp;Up&nbsp;</span></a>
+</p>
+
+<p id="close-all">
+    <a href="top"><span>&nbsp;Close&nbsp;&nbsp;</span><img src="img/up.png"></a>
+</p>
+<!--side buttons-->
+</div>
+</body>
+
+
+</html>
